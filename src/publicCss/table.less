@@ -1,0 +1,88 @@
+.myTable{
+  background-color: transparent;
+  max-height: 710px;
+}
+/deep/ .el-table .blankingBg {
+  width: 188rem;
+  height: 4rem;
+  background: url("../assets/bg_list.png") no-repeat;
+}
+/deep/ .el-table .Bg {
+  background: transparent;
+}
+/deep/ .el-table{
+  color: white;
+}
+/deep/ .el-table__header-wrapper, /deep/ .el-table__body-wrapper tr{
+  height: 40px;
+}
+/deep/ .el-table td, /deep/ .el-table th.is-leaf{
+  border: none;
+}
+/deep/.el-table th, /deep/.el-table tr{
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+/*为了设置行高*/
+/deep/ .el-table th,/deep/ .myTable td{
+  padding: 0;
+}
+/deep/ .el-table td{
+  text-align: center;
+}
+/deep/ .el-table tbody tr:hover{
+  background: url("../assets/bg_list_selected.png") no-repeat;
+}
+/deep/ .el-table--striped .el-table__body tr.el-table__row--striped td{
+  background-color: transparent;
+}
+/deep/ .el-table--border::after, /deep/ .el-table--group::after, /deep/ .el-table::before{
+  background-color: transparent;
+}
+/*设置表格头部的背景*/
+/deep/ .headerCss{
+  text-align: center;
+  width: 235px;
+  height: 40px;
+  background: url("../assets/bg_list_title.png") no-repeat;
+}
+//车牌颜色自定义以后不居中，此样式解决居中问题
+/deep/ .el-table .cell{
+  text-align: -webkit-center;
+  -ms-text-align-last: center;
+}
+
+//设置车牌颜色的背景色
+.cphmPublicCss{
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  border: 1px solid white;
+}
+.blueCphm{
+  background-color: #0000ff;
+}
+.yellowCphm{
+  background-color: #ffcc33;
+}
+.whiteCphm{
+  background-color: #ffffff;
+  color: #000;
+}
+.blackCphm{
+  background-color: #000000;
+  border: 1px solid white;
+}
+.greenCphm{
+  background-color: #009936;
+}
+.mhBlackCphm{
+  background-color: #333333;
+}
+.otherCphm{
+  background-color: #a0a0a0;
+}

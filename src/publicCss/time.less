@@ -1,0 +1,102 @@
+@import "publicCss.less";
+/*时间控件输入框样式*/
+//.el-input__inner{
+//  width: 370px;
+//  height: 30px;
+//  background: url("../assets/bg_time.png") no-repeat;
+//}
+.el-date-editor .el-range-separator{
+  color: @grayColor;
+}
+.el-range-editor--small .el-range-input{
+  font-size: @smallFontSize;
+}
+.el-date-editor .el-range-input{
+  background-color: transparent;
+  color: @whiteColor;
+}
+.el-input__inner{
+  border: none;
+}
+/*打开时间控件样式*/
+.el-picker-panel,.el-picker-panel__sidebar{
+  background: #021b43;
+  border: none;
+  color: white;
+}
+.el-picker-panel__shortcut{
+  color: white;
+}
+.el-date-range-picker__content.is-left {
+  border-right: 1px solid rgba(0,121,255,0.1);
+}
+//星期颜色
+.el-date-table th{
+  color: #00ffec;
+  border-bottom: none;
+}
+//除本月的颜色
+.el-date-table td.next-month, .el-date-table td.prev-month{
+  color: rgba(255,255,255,0.3);
+}
+.el-date-table td.today span {
+  color: #00ffec;
+}
+//选择年月日的颜色
+.el-picker-panel__icon-btn{
+  color: rgba(255,255,255,0.3);
+}
+//时间箭头颜色
+.el-popper[x-placement^=bottom] .popper__arrow::after, .el-popper[x-placement^=bottom] .popper__arrow{
+  border-bottom-color: #02545C;
+}
+/*消息提示样式*/
+.el-message--success{
+  background-color: #0084ff;
+  border-color: #0084ff;
+}
+.el-message--success .el-message__content {
+  color: white;
+}
+/*下拉框颜色 #021b43*/
+.el-select-dropdown{
+  background-color: #02545C;
+  border: 1px solid #02545C;
+}
+/*下拉框选中颜色*/
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
+  background-color: rgba(0,255,237,0.3);
+  color: white;
+}
+.el-select-dropdown__item{
+  color: white;
+}
+//选中日期的样式
+.el-date-table td.in-range div{
+  background-color: #409eff;
+}
+
+//*{
+//  /*三角箭头的颜色*/
+//  scrollbar-arrow-color: #000518;
+//  /*滚动条滑块按钮的颜色*/
+//  scrollbar-face-color: #00173d;
+//  /*滚动条整体颜色*/
+//  scrollbar-highlight-color: #000518;
+//  /*滚动条阴影*/
+//  scrollbar-shadow-color: #000518;
+//  /*滚动条轨道颜色*/
+//  scrollbar-track-color: #000518;
+//}
+/*搜索按钮样式*/
+.el-button--primary{
+  background-color: @selectedBackgroundColor;
+  color: @whiteColor;
+  height: 3.2rem;
+  line-height: 3.2rem;
+  width: 10rem;
+  border-color: @selectedBackgroundColor;
+}
+.el-button{
+  padding: 0;
+}

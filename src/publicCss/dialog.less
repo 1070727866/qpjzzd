@@ -1,0 +1,116 @@
+/*下面都是上报弹出框的样式*/
+/*radio选中字体颜色*/
+/deep/ .el-radio__input.is-checked+.el-radio__label {
+  color: white;
+}
+/*radio单选按钮字体颜色*/
+/deep/ .el-radio{
+  color: white;
+}
+/*radio选中圆圈颜色*/
+/deep/ .el-radio__input.is-checked .el-radio__inner {
+  border-color: #024750;
+  background: #024750;
+}
+/* ie浏览器 文字对齐方式*/
+/deep/ .el-dialog--center .el-dialog__body{
+  text-align: left;
+}
+
+.dialogTitle{
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+//控制上报弹窗距离上面的高度
+/deep/ .el-dialog{
+  margin-top: 5vh !important;
+}
+//告警详情弹窗
+.dialog{
+  width: 1167px;
+  height: 530px;
+  background: url("../assets/bg_carAlarm_dialog.png") no-repeat;
+  box-sizing: border-box;
+  padding-left: 2rem;
+}
+//告警上报弹窗
+.reportDialog{
+  width: 1200px;
+  height: 900px;
+  background: url("../assets/bg_report.png") no-repeat;
+  box-sizing: border-box;
+  padding-left: 2rem;
+}
+//布控弹窗
+.bkDialog{
+  width: 766px;
+  height: 710px;
+  background: url("../assets/bg_addBk.png") no-repeat;
+  box-sizing: border-box;
+  padding-left: 2rem;
+}
+.inlineBlockInput >.detailInput, .inlineBlockInput >.selectTemplate{
+  display: inline-block;
+  margin-left: 1rem;
+}
+.inlineBlockInput .dateTimeTemplate{
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.inlineBlockInput .detailInput:nth-of-type(1){
+  margin-left: 0px;
+}
+//填写信息的父容器
+.writeDiv{
+  margin-top: 20px;
+  padding-top: 1rem;
+  color: white;
+  padding-left: 10px;
+  background: url("../assets/bg_txxx.png") no-repeat;
+  width: 1162px;
+  height: 339px;
+  clear: both
+}
+//填写信息的标题文字样式
+.writeTitle{
+  font-size: 16px;text-align: left;
+  color: #f6ff00;
+}
+/deep/ .el-table .Bg {
+  background: transparent;
+}
+/*上报字体颜色*/
+/deep/ .el-button--text{
+  color: white;
+}
+/*textarea样式*/
+/deep/ .el-textarea{
+  width: 67rem;
+}
+/deep/ .el-textarea__inner{
+  color: white;
+  background: url("../assets/bg_bzxx.png") no-repeat;
+  border: none;
+  width: 670px;
+  height: 96px;
+  overflow: hidden;
+}
+/*弹出框样式*/
+/deep/ .el-dialog__headerbtn {
+  top: 35px;
+  right: 10px;
+}
+/deep/ .el-dialog{
+  background: transparent;
+}
+/deep/ .el-dialog--center .el-dialog__body{
+  padding: 0;
+}
+/deep/ .el-dialog__headerbtn .el-dialog__close{
+  color: white;
+}
